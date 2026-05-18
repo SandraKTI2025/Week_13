@@ -7,7 +7,6 @@ class Animal:
     def sees(self, other):
         print(f"{self.name} sees {other.name}")
 
-
 class Cat(Animal):
     def __init__(self, cat_name):
         super().__init__(cat_name)
@@ -31,10 +30,9 @@ class Cat(Animal):
         super().sees(other)
 
         if isinstance(other, Dog):
-            self.hiss()      
+            self.hiss()
         else:
-            self.meow()     
-
+            self.meow()
 
 class Dog(Animal):
     def __init__(self, dog_name):
